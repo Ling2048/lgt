@@ -1,0 +1,7 @@
+{
+    "type": "page",
+    "params": {
+        "name": "Other"
+    },
+    "out": "./src/pages/Other"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "lgt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn build && yarn gen -t page -r \"{\\\"type\\\": \\\"API.Dict\\\",\\\"find\\\": \\\"test\\\"}\" -o ./out/Dict",
+    "test:json": "yarn build && yarn gen",
+    "gen": "lgt generate",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
+    "link": "node link",
+    "publish": "npm publish"
+  },
+  "bin": {
+    "lgt": "./bin/lgt.js"
+  },
+  "author": "L2048",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/node": "^16.11.7",
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0",
+    "fs-extra": "^10.0.0",
+    "rollup": "^2.59.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13"
+  }
+}

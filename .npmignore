@@ -1,0 +1,12 @@
+node_modules/*
+example/node_modules/*
+example/build
+.DS_Store
+yarn.lock
+package-lock.json
+example/**
+template/*
+rollup.config.ts
+src/*
+tsconfig.json
+lgt.config.json

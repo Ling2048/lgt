@@ -1,0 +1,8 @@
+{
+    "type": "page",
+    "params": {
+        "name": "Page",
+        "component": "Component1"
+    },
+    "out": "./out/Test"
+}
